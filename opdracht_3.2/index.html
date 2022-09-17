@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulier basis</title>
+</head>
+<body>
+  <form action="results.html" method="GET">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" min="1" max="200" step="1">
+    </div>
+    <div>
+      <label for="date">Birthdate</label>
+      <input type="date" name="date" id="date" min="1900-11-12">
+    </div>
+    <div>
+      Land van afkomst
+      <div>
+        <label for="Nederland">Nederland</label>
+        <input type="checkbox" name="Nederland" id="Nederland">
+      </div>
+      <div>
+        <label for="België">België</label>
+        <input type="checkbox" name="België" id="België">
+      </div>
+    </div>
+    <div>
+      Gender
+      <div>
+        <label for="male">Male</label>
+        <input type="checkbox" name="gender" id="male" value="male">
+      </div>
+      <div>
+        <label for="female">Female</label>
+        <input type="checkbox" name="gender" id="female" value="female">
+      </div>
+    </div>
+    <div>
+      <label for="bsn">BSN</label>
+      <input type="BSN" name="BSN" id="BSN" max="9" required>
+    </div>
+    <div>
+      <label for="stad">Stad</label>
+        <input type="text" name="stad" id="stad" required>
+    </div>
+    <div>
+      <label for="vakantieland">Vakantieland</label>
+      <select>
+        <option value="Frankrijk">Frankrijk</option>
+        <option value="Canada">Canada</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Spanje">Spanje</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+    </div>
+    <div>
+        <label>
+          Password
+        <input type="password" name="password" required>
+    </label>
+    </div>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
